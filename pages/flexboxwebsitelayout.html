@@ -1,0 +1,131 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <style>
+            body {
+                padding: 2em;
+            }
+
+            .headerContainer {
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: tomato;
+                font-weight: bold;
+                padding: 10px;
+            }
+
+            .footerContainer {
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: lightgreen;
+                font-weight: bold;
+                padding: 10px;
+            }
+
+            .mainContainer {
+                display: flex;
+                flex-flow: row wrap;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            .article {
+                padding: 10px;
+                margin: 10px;
+                background: aqua;
+            }
+
+            .sideBarRightItem {
+                background: hotpink;
+                order: 2;
+            }
+
+            .sideBarItem {
+                flex: 1 0 0;
+                border: 0 solid green;
+            }
+
+            .mainContentItem {
+                text-align: left;
+                background: deepskyblue;
+                flex: 3 0px;
+                order: 1;
+            }
+
+            .container {
+                display: flex;
+                flex-flow: row wrap;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            .navigationBar {
+                background: rgb(153, 0, 255);
+                width: 20%;
+                order: 1;
+                padding: 10px;
+            }
+
+            .subContainer {
+                flex: 1 0;
+                order: 2;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <nav class="navigationBar">
+                <h1>Navigation Bar</h1>
+            </nav>
+            <div class="subContainer">
+                <header class="headerContainer">
+                    <h1>Flexbox Website Layout</h1>
+                </header>
+                <div class="mainContainer">
+                    <section class="mainContentItem">
+                        <article class="article">
+                            <h2>Article 1</h2>
+                            <p>Bridgelabz is an AWS recognised incubator and is soley focused on solving tech employability.
+                                Over the last 5
+                                years, it has worked with 500+ top tech companies and 2500+ engineers have been hired from
+                                Bridgelabz. It has
+                                labs in Mumbai and Bangalore. It has partnered with over 500 companies, including Yatra,
+                                Capgemini, Meru Cabs,
+                                LafargeHolcim, JDA, UrbanLadder, Fullerton India, and RBL bank.</p>
+                        </article>
+                        <article class="article">
+                            <h2>Article 2</h2>
+                            <p>Bridgelabz is an AWS recognised incubator and is soley focused on solving tech employability.
+                                Over the last 5
+                                years, it has worked with 500+ top tech companies and 2500+ engineers have been hired from
+                                Bridgelabz. It has
+                                labs in Mumbai and Bangalore. It has partnered with over 500 companies, including Yatra,
+                                Capgemini, Meru Cabs,
+                                LafargeHolcim, JDA, UrbanLadder, Fullerton India, and RBL bank.</p>
+                        </article>
+                        <article class="article">
+                            <h2>Article 3</h2>
+                            <p>Bridgelabz is an AWS recognised incubator and is soley focused on solving tech employability.
+                                Over the last 5
+                                years, it has worked with 500+ top tech companies and 2500+ engineers have been hired from
+                                Bridgelabz. It has
+                                labs in Mumbai and Bangalore. It has partnered with over 500 companies, including Yatra,
+                                Capgemini, Meru Cabs,
+                                LafargeHolcim, JDA, UrbanLadder, Fullerton India, and RBL bank.</p>
+                        </article>
+                    </section>
+                    <sideBar class="sideBarItem sideBarRightItem">
+                        <div class="center">
+                            <p>Right Side Bar</p>
+                        </div>
+                    </sideBar>
+                </div>
+                <footer class="footerContainer">Footer</footer>
+            </div>
+        </div>
+    </body>
+</html>
